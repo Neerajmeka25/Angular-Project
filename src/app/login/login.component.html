@@ -1,0 +1,16 @@
+<div id="formDiv">
+    <form #userForm="ngForm" (ngSubmit)="submitForm(userForm)">
+      <h1>Login</h1>
+      <div class="input">
+        <label for="name">UserName: </label>
+        <input type="text" [(ngModel)]="userDetails.username" name="username">
+      </div>
+      <div class="input">
+        <label for="password">Password: </label>
+        <input type="password" [(ngModel)]="userDetails.password" name="password">
+      </div>
+      <button type="submit">Login</button>
+      <a routerLink="/register">New here? Register here</a>
+    </form>
+  </div>
+  
